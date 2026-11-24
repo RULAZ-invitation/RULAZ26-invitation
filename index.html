@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b1028">
+<title>RULAZ26 — The Wedding Celebration</title>
+<style>
+:root{--wine:#5b1028;--dark:#350817;--gold:#b58b43;--pale:#e3ca91;--cream:#fbf7ef;--ink:#49382f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,serif}
+.intro{min-height:100svh;display:grid;place-items:center;text-align:center;padding:28px 20px;color:var(--cream);background:radial-gradient(ellipse at 50% 20%,#b58b4330,transparent 45%),linear-gradient(145deg,#2d0715,#68162f 55%,#3b0a1a);position:relative;overflow:hidden}
+.intro:before{content:"RA";position:absolute;font-size:65vw;color:#e3ca910d;line-height:1}.intro-inner{position:relative;max-width:520px}.crown{font-size:36px;color:var(--pale)}.kicker,.eyebrow{font:11px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.intro-logo{font-size:clamp(36px,9vw,58px);margin:15px 0}.intro-logo em,.brand em{font-family:cursive;color:var(--pale);font-weight:400}
+.intro p{line-height:1.8;color:#fff0d7}.btn{display:inline-block;border:1px solid var(--pale);border-radius:30px;background:var(--pale);color:var(--dark);padding:14px 24px;margin:16px 5px 0;text-decoration:none;font:600 13px Arial,sans-serif;cursor:pointer}
+.btn.outline{background:transparent;color:var(--pale)}.site{display:none}.site.visible{display:block;animation:show .7s ease}@keyframes show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+header{position:sticky;top:0;z-index:4;background:#fbf7eff0;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:17px 6%;border-bottom:1px solid #b58b4330}
+.brand{font-size:24px;color:var(--wine);text-decoration:none}header a:last-child{font:11px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--wine);text-decoration:none}
+.hero{text-align:center;padding:60px 18px;background:linear-gradient(#f6eddf,var(--cream))}.hero h1{font-size:clamp(38px,9vw,65px);font-weight:400;color:var(--wine);line-height:1.1;margin:18px 0}.hero h1 span{display:block;color:var(--gold);font-family:cursive}
+.copy{max-width:650px;margin:18px auto;line-height:1.9;color:#75665d}.date{font:12px Arial,sans-serif;letter-spacing:.15em;color:var(--gold);margin:24px}
+.photo{max-width:430px;margin:30px auto 0;padding:8px;background:white;border:1px solid var(--gold);box-shadow:0 18px 45px #4b221f20}.photo-inner{min-height:420px;display:grid;place-items:center;text-align:center;padding:24px;color:#fff8ed;background:linear-gradient(180deg,#29101a20,#29101a99),linear-gradient(135deg,#c7b49e,#75545a 60%,#3c2630);position:relative}.photo-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+section.content{text-align:center;padding:68px 20px}.content h2{font-weight:400;color:var(--wine);font-size:clamp(30px,7vw,44px);margin:12px 0 20px}.divider{width:90px;height:1px;background:var(--gold);margin:28px auto}
+.count{background:var(--wine);color:white}.count h2{color:var(--pale)}.timer{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:28px}.unit{border:1px solid #e3ca9170;padding:16px 10px;min-width:72px}.unit b{display:block;font-size:30px;font-weight:400;color:var(--pale)}.unit small{font:10px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.details{background:#f0e7d9}.card{max-width:590px;margin:25px auto;padding:30px 20px;background:#fff9f0aa;border:1px solid #b58b4380}.card h3{font-size:29px;font-weight:400;color:var(--wine)}.card p{line-height:1.8;color:#75665d}
+.palette{display:flex;justify-content:center;gap:10px;margin:24px}.swatch{width:36px;height:36px;border-radius:50%;border:2px solid white;box-shadow:0 2px 8px #0002}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:650px;margin:25px auto}.tile{min-height:165px;display:grid;place-items:center;color:white;background:linear-gradient(145deg,#bca58a,#6b3947);border:5px solid white;box-shadow:0 5px 18px #4c2b2015;font-size:13px;padding:10px}
+footer{text-align:center;padding:36px 18px;background:var(--dark);color:#e9d9b9;line-height:1.9}footer strong{color:var(--pale);font-weight:400}.small{font:11px Arial,sans-serif;color:#887a70;line-height:1.7}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}.photo-inner{min-height:520px}}
+</style>
+</head>
+<body>
+<script>const RSVP_FORM_URL="";</script>
+<section class="intro" id="welcome"><div class="intro-inner"><div class="crown">♛</div><div class="kicker">A celebration of love</div><div class="intro-logo">the <em>RULAZ</em>affair</div><p>Together with our families,<br>we invite you to celebrate our special day.</p><button class="btn" onclick="openInvitation()">View Invitation →</button></div></section>
+<main class="site" id="site">
+<header><a class="brand" href="#home">the <em>RULAZ</em>affair</a><a href="#details">Wedding details ↓</a></header>
+<section class="hero" id="home"><div class="eyebrow">With joy in our hearts</div><h1>Ruth Chidinma <span>&</span> Emeh Lazbry</h1><p class="copy">The Families of Pastor Tobias Egbucha and Mr. Gideon Emeh cordially invite you to the wedding ceremony of their beloved children.</p><div class="date">SATURDAY · 26 DECEMBER 2026</div><div class="photo"><div class="photo-inner"><img src="couple-photo.jpg" alt="Ruth and Lazbry" onload="this.style.display='block';document.getElementById('photoHint').style.display='none'"><div id="photoHint">Your couple photograph will appear here.<br><br><span class="small" style="color:#fff0d7">We'll add your photo in the next step.</span></div></div></div></section>
+<section class="content"><div class="eyebrow">Save the date</div><h2>Our day is almost here</h2><p class="copy">A new chapter, a shared journey and a lifetime of love. We would be honoured to have you celebrate with us.</p><div class="divider"></div><div class="eyebrow">Counting down to forever</div><div class="timer"><div class="unit"><b id="days">--</b><small>Days</small></div><div class="unit"><b id="hours">--</b><small>Hours</small></div><div class="unit"><b id="minutes">--</b><small>Minutes</small></div><div class="unit"><b id="seconds">--</b><small>Seconds</small></div></div></section>
+<section class="content details" id="details"><div class="eyebrow">The celebration</div><h2>Wedding Details</h2><div class="card"><div class="eyebrow">Saturday · 26 December 2026</div><h3>Church & Reception</h3><p><strong>Graceland Event Center</strong><br>Following through Amakohia Flyover,<br>Onitsha Road, Owerri.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Graceland+Event+Center+Amakohia+Flyover+Onitsha+Road+Owerri+Nigeria" target="_blank" rel="noopener">Open location in Google Maps</a><p class="small">Ceremony time can be added when confirmed.</p></div></section>
+<section class="content"><div class="eyebrow">Dress beautifully</div><h2>Colours of the Day</h2><p class="copy">Brown · Beige · Peach · Burgundy</p><div class="palette"><i class="swatch" style="background:#70452f"></i><i class="swatch" style="background:#e6d8c1"></i><i class="swatch" style="background:#e9b6a1"></i><i class="swatch" style="background:#64152e"></i></div></section>
+<section class="content details"><div class="eyebrow">A few favourite moments</div><h2>Our Gallery</h2><p class="copy">A little glimpse into our journey.</p><div class="gallery"><div class="tile">Engagement photo</div><div class="tile">Pre-wedding moment</div><div class="tile">A favourite memory</div></div><p class="small">We'll replace these sample spaces with your photographs.</p></section>
+<section class="content"><div class="eyebrow">We hope to see you</div><h2>Kindly RSVP</h2><p class="copy">Your presence will make our celebration even more special. Please confirm your attendance using the button below.</p><button class="btn" onclick="openRSVP()">Confirm Attendance</button><p class="small">Your Google Form will be connected in the next setup step.</p></section>
+<footer><div style="font-size:28px;color:#e3ca91">♡</div><strong>the RULAZaffair</strong><br>Ruth Chidinma & Emeh Lazbry<br>26 December 2026</footer>
+</main>
+<script>
+function openInvitation(){document.getElementById("welcome").style.display="none";document.getElementById("site").classList.add("visible");window.scrollTo({top:0,behavior:"smooth"})}
+function openRSVP(){if(RSVP_FORM_URL.trim()){window.open(RSVP_FORM_URL,"_blank","noopener")}else{alert("The RSVP form is not connected yet. We'll connect your Google Form in the next step.")}}
+const weddingDate=new Date("2026-12-26T00:00:00+01:00").getTime();
+function updateCountdown(){let d=weddingDate-Date.now();let v={days:Math.max(0,Math.floor(d/86400000)),hours:Math.max(0,Math.floor(d/3600000)%24),minutes:Math.max(0,Math.floor(d/60000)%60),seconds:Math.max(0,Math.floor(d/1000)%60)};Object.keys(v).forEach(k=>document.getElementById(k).textContent=String(v[k]).padStart(2,"0"))}
+updateCountdown();setInterval(updateCountdown,1000);
+</script>
+</body></html>
